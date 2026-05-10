@@ -1,0 +1,10 @@
+pdfplumber
+pm4py
+pyvis
+pyvis.network
+streamlit
+pandas
+google.generativeai
+openai
+dotenv
+#just run pip install -r requirements.txt

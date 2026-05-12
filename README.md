@@ -130,19 +130,19 @@ Requires `routes.csv` in the working directory and a `.env` file with a `GITHUB_
 #### Tab 1 — 🗺️ Process Map (Task 3)
 An interactive PyVis force-directed graph of the transit network. Each node is a bus stop; each directed edge shows the average travel time between consecutive stops. **Red edges** are bottleneck transitions (above the 75th-percentile threshold). A side panel lists the top-10 most-frequent transitions and the top-5 bottleneck edges for the selected route.
 
-#### Tab 2 — 📊 Throughput Analysis (Task 3)
+#### Tab 2 — Throughput Analysis 
 Trip-level throughput time statistics: average, median, minimum, maximum, and standard deviation of end-to-end trip duration. Adapts automatically when all trips on a route have identical scheduled durations (fixed-schedule pattern).
 
-#### Tab 3 — ⚠️ Bottleneck Analysis (Task 3)
+#### Tab 3 — Bottleneck Analysis 
 Detailed bottleneck report. Bottlenecks are stop-to-stop transitions whose average duration exceeds the **75th percentile** of all transitions. Displays the count of bottlenecks, their share of total transitions, the top 3 slowest transitions, a full sortable table, and a CSV download option.
 
-#### Tab 4 — 🗺️ Trip Planner (Task 4)
+#### Tab 4 — Trip Planner 
 Point-to-point journey planner. Select an origin and destination stop; the app runs Dijkstra's shortest-path algorithm on a weighted directed graph (travel edges + 6-minute transfer edges at interchange stops) and displays the optimal itinerary with step-by-step instructions and an interactive PyVis route map.
 
-#### Tab 5 — 🤖 AI Chatbot (Task 5)
+#### Tab 5 — AI Chatbot 
 A conversational assistant powered by **GPT-4o-mini** (via the GitHub Models API). The chatbot is grounded in a JSON knowledge base built from the live route data — routes, stops, departure times, and inter-stop travel times — so it can answer natural-language questions about routes, connections, and journey planning. Configure your `GITHUB_TOKEN` in a `.env` file to enable this tab.
 
-#### Tab 6 — 👤 Personal Routes (Task 6)
+#### Tab 6 — Personal Routes 
 Shortest-path lookup for five pre-defined team members, each mapped from their home area's nearest bus stop to FAST University. Displays estimated travel time and a hierarchical PyVis itinerary map.
 
 ---
